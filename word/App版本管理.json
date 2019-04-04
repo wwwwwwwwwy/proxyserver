@@ -1,0 +1,3126 @@
+{
+    "flag": "SBDoc",
+    "info": {
+        "name": "App版本管理",
+        "description": "博锐尚格手机App版本管理系统"
+    },
+    "global": {
+        "baseurl": [],
+        "before": "",
+        "after": "",
+        "article": [],
+        "status": [],
+        "template": []
+    },
+    "test": [],
+    "data": [
+        {
+            "name": "#回收站",
+            "type": 1,
+            "id": "c6c5e220-398d-11e9-a5f6-7307f8d107bf",
+            "data": []
+        },
+        {
+            "name": "统一",
+            "type": 0,
+            "id": "c6c5bb10-398d-11e9-a5f6-7307f8d107bf",
+            "data": [
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "结果：success成功，failure失败",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 0,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [
+                                        {
+                                            "data": [
+                                                {
+                                                    "mock": "",
+                                                    "must": 1,
+                                                    "remark": "应用Key",
+                                                    "type": 0,
+                                                    "name": "id"
+                                                }
+                                            ],
+                                            "mock": "",
+                                            "must": 1,
+                                            "remark": "",
+                                            "type": 4,
+                                            "name": null
+                                        }
+                                    ],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "结果内容（单个）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 0,
+                                "rawJSON": [
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 0,
+                                        "remark": "产品线id",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "productId"
+                                    },
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 0,
+                                        "remark": "应用名称",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "name"
+                                    },
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 0,
+                                        "remark": "应用（下载）地址",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "downloadUrl"
+                                    },
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 0,
+                                        "remark": "图片资源id",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "picture"
+                                    },
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 0,
+                                        "remark": "应用简介",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "description"
+                                    },
+                                    {
+                                        "data": [
+                                            {
+                                                "drag": 1,
+                                                "mock": "",
+                                                "show": 0,
+                                                "remark": "iso包名",
+                                                "type": 0,
+                                                "must": 1,
+                                                "name": "ios"
+                                            },
+                                            {
+                                                "drag": 1,
+                                                "mock": "",
+                                                "show": 0,
+                                                "remark": "android包名",
+                                                "type": 0,
+                                                "must": 1,
+                                                "name": "android"
+                                            }
+                                        ],
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 0,
+                                        "remark": "应用包名",
+                                        "type": 4,
+                                        "must": 1,
+                                        "name": "packageName"
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "值为Body结构的json字符串",
+                                    "must": 0,
+                                    "name": "jsonString"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "38bc778b-4eca-4cff-a88b-9e25cde37a40",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "6dbb2650-3996-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "添加应用",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/AppAddService",
+                    "name": "AppAddService"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "结果success成功，failure失败",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 5,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [
+                                        {
+                                            "data": [
+                                                {
+                                                    "mock": "277e9755-2fe8-48f0-91c8-823a89b9fd98",
+                                                    "must": 1,
+                                                    "remark": "应用id",
+                                                    "type": 0,
+                                                    "name": "id"
+                                                },
+                                                {
+                                                    "mock": "testUpdateName",
+                                                    "must": 1,
+                                                    "remark": "应用名称",
+                                                    "type": 0,
+                                                    "name": "name"
+                                                },
+                                                {
+                                                    "mock": "987654321",
+                                                    "must": 1,
+                                                    "remark": "图片资源id",
+                                                    "type": 0,
+                                                    "name": "picture"
+                                                },
+                                                {
+                                                    "data": [
+                                                        {
+                                                            "data": [
+                                                                {
+                                                                    "mock": "ios",
+                                                                    "must": 1,
+                                                                    "remark": "版本应用类型",
+                                                                    "type": 0,
+                                                                    "name": "appType"
+                                                                },
+                                                                {
+                                                                    "mock": "true",
+                                                                    "must": 1,
+                                                                    "remark": "最新版本是否存在",
+                                                                    "type": 2,
+                                                                    "name": "exist"
+                                                                },
+                                                                {
+                                                                    "mock": "ff28ec2b-61a1-49be-80d9-fd7913dd6289",
+                                                                    "must": 1,
+                                                                    "remark": "版本id",
+                                                                    "type": 0,
+                                                                    "name": "id"
+                                                                },
+                                                                {
+                                                                    "mock": "1.0.0",
+                                                                    "must": 1,
+                                                                    "remark": "版本号",
+                                                                    "type": 0,
+                                                                    "name": "number"
+                                                                }
+                                                            ],
+                                                            "mock": "",
+                                                            "must": 1,
+                                                            "remark": "",
+                                                            "type": 4,
+                                                            "name": null
+                                                        },
+                                                        {
+                                                            "data": [
+                                                                {
+                                                                    "mock": "android",
+                                                                    "must": 1,
+                                                                    "remark": "版本应用id",
+                                                                    "type": 0,
+                                                                    "name": "appType"
+                                                                },
+                                                                {
+                                                                    "mock": "true",
+                                                                    "must": 1,
+                                                                    "remark": "最新版本是否存在",
+                                                                    "type": 2,
+                                                                    "name": "exist"
+                                                                },
+                                                                {
+                                                                    "mock": "ff28ec2b-61a1-49be-80d9-fd7913dd6289",
+                                                                    "must": 1,
+                                                                    "remark": "版本id",
+                                                                    "type": 0,
+                                                                    "name": "id"
+                                                                },
+                                                                {
+                                                                    "mock": "1.0.0",
+                                                                    "must": 1,
+                                                                    "remark": "版本号",
+                                                                    "type": 0,
+                                                                    "name": "number"
+                                                                }
+                                                            ],
+                                                            "mock": "",
+                                                            "must": 1,
+                                                            "remark": "",
+                                                            "type": 4,
+                                                            "name": null
+                                                        }
+                                                    ],
+                                                    "mock": "",
+                                                    "must": 1,
+                                                    "remark": "",
+                                                    "type": 3,
+                                                    "name": "versions"
+                                                }
+                                            ],
+                                            "mock": "",
+                                            "must": 1,
+                                            "remark": "",
+                                            "type": 4,
+                                            "name": null
+                                        }
+                                    ],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "返回内容（多个）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 0,
+                                "rawJSON": [
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "1"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "1",
+                                        "remark": "产品线id",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "productId"
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "Body结构的json字符串",
+                                    "must": 1,
+                                    "name": "jsonString"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "5d8971b2-7a66-4227-9685-c595f9ff032e",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "a94f5b70-39a8-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "产品线下各个应用最新版本列表",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/AppDownloadListService",
+                    "name": "AppDownloadListService"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "结果：success成功，failure失败",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 5,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [
+                                        {
+                                            "data": [
+                                                {
+                                                    "mock": "277e9755-2fe8-48f0-91c8-823a89b9fd98",
+                                                    "must": 1,
+                                                    "remark": "应用Key",
+                                                    "type": 0,
+                                                    "name": "id"
+                                                },
+                                                {
+                                                    "mock": "1",
+                                                    "must": 1,
+                                                    "remark": "产品id",
+                                                    "type": 0,
+                                                    "name": "productId"
+                                                },
+                                                {
+                                                    "mock": "测试",
+                                                    "must": 1,
+                                                    "remark": "应用名称",
+                                                    "type": 0,
+                                                    "name": "name"
+                                                },
+                                                {
+                                                    "data": [
+                                                        {
+                                                            "mock": "ios.app",
+                                                            "must": 1,
+                                                            "remark": "ios安装包",
+                                                            "type": 0,
+                                                            "name": "ios"
+                                                        },
+                                                        {
+                                                            "mock": "android.app",
+                                                            "must": 1,
+                                                            "remark": "andriod安装包",
+                                                            "type": 0,
+                                                            "name": "android"
+                                                        }
+                                                    ],
+                                                    "mock": "",
+                                                    "must": 1,
+                                                    "remark": "安装包",
+                                                    "type": 4,
+                                                    "name": "packageName"
+                                                },
+                                                {
+                                                    "mock": "www.baidu.com",
+                                                    "must": 1,
+                                                    "remark": "应用下载地址",
+                                                    "type": 0,
+                                                    "name": "downloadUrl"
+                                                },
+                                                {
+                                                    "mock": "123456789",
+                                                    "must": 1,
+                                                    "remark": "图片资源id",
+                                                    "type": 0,
+                                                    "name": "picture"
+                                                },
+                                                {
+                                                    "mock": "hehe",
+                                                    "must": 1,
+                                                    "remark": "应用简介",
+                                                    "type": 0,
+                                                    "name": "description"
+                                                }
+                                            ],
+                                            "mock": "",
+                                            "must": 1,
+                                            "remark": "",
+                                            "type": 4,
+                                            "name": null
+                                        }
+                                    ],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "返回内容（单个）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 0,
+                                "rawJSON": [
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "277e9755-2fe8-48f0-91c8-823a89b9fd98"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "277e9755-2fe8-48f0-91c8-823a89b9fd98",
+                                        "remark": "应用Key",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "id"
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "值为Body结构的json字符串",
+                                    "must": 1,
+                                    "name": "jsonString"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "2e393f22-e181-4717-9271-25b1dcb9feb2",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "92921780-399c-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "获取应用信息",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/AppGetService",
+                    "name": "AppGetService"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "结果success成功failure失败",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 5,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [
+                                        {
+                                            "data": [
+                                                {
+                                                    "mock": "1",
+                                                    "must": 1,
+                                                    "remark": "产品线Id",
+                                                    "type": 0,
+                                                    "name": "id"
+                                                },
+                                                {
+                                                    "mock": "MEOS-设备设施",
+                                                    "must": 1,
+                                                    "remark": "产品线名称",
+                                                    "type": 0,
+                                                    "name": "name"
+                                                },
+                                                {
+                                                    "data": [
+                                                        {
+                                                            "data": [
+                                                                {
+                                                                    "mock": "277e9755-2fe8-48f0-91c8-823a89b9fd98",
+                                                                    "must": 1,
+                                                                    "remark": "应用Key",
+                                                                    "type": 0,
+                                                                    "name": "id"
+                                                                },
+                                                                {
+                                                                    "mock": "测试",
+                                                                    "must": 1,
+                                                                    "remark": "应用名称",
+                                                                    "type": 0,
+                                                                    "name": "name"
+                                                                }
+                                                            ],
+                                                            "mock": "",
+                                                            "must": 1,
+                                                            "remark": "",
+                                                            "type": 4,
+                                                            "name": null
+                                                        }
+                                                    ],
+                                                    "mock": "",
+                                                    "must": 1,
+                                                    "remark": "应用列表",
+                                                    "type": 3,
+                                                    "name": "apps"
+                                                }
+                                            ],
+                                            "mock": "",
+                                            "must": 1,
+                                            "remark": "",
+                                            "type": 4,
+                                            "name": null
+                                        }
+                                    ],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "返回内容（多个）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 0,
+                                "rawJSON": [
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 0,
+                                        "remark": "",
+                                        "type": 0,
+                                        "must": 0,
+                                        "name": ""
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "值为Body结构的json字符串",
+                                    "must": 1,
+                                    "name": "jsonString"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "e9e7dfe3-4e5b-4cc1-ad00-03f0e8f02ab1",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "5ec62250-399e-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "应用产品列表",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/AppListService",
+                    "name": "AppListService"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "结果：success成功，failure失败",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 0,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [
+                                        {
+                                            "data": [
+                                                {
+                                                    "mock": "",
+                                                    "must": 1,
+                                                    "remark": "id",
+                                                    "type": 0,
+                                                    "name": "id"
+                                                },
+                                                {
+                                                    "mock": "",
+                                                    "must": 1,
+                                                    "remark": "类型名称",
+                                                    "type": 0,
+                                                    "name": "name"
+                                                }
+                                            ],
+                                            "mock": "",
+                                            "must": 1,
+                                            "remark": "",
+                                            "type": 4,
+                                            "name": null
+                                        }
+                                    ],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "结果内容（多个）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSON": [
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 0,
+                                        "remark": "",
+                                        "type": 0,
+                                        "must": 0,
+                                        "name": ""
+                                    }
+                                ],
+                                "rawJSONType": 0,
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "值为json字符串Body结构",
+                                    "must": 0,
+                                    "type": 0,
+                                    "name": "jsonString"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "43797ebb-049d-44ad-bf50-1d5590e36a22",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "005a09e0-3992-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "App类型列表",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/AppTypeListService",
+                    "name": "AppTypeListService"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "结果success成功failure失败",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 5,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "返回内容（空）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 0,
+                                "rawJSON": [
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "277e9755-2fe8-48f0-91c8-823a89b9fd98"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "277e9755-2fe8-48f0-91c8-823a89b9fd98",
+                                        "remark": "应用Key",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "id"
+                                    },
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "testUpdateName"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "testUpdateName",
+                                        "remark": "应用名称",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "name"
+                                    },
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "www.sina.com"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "www.sina.com",
+                                        "remark": "应用下载地址",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "downloadUrl"
+                                    },
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "987654321"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "987654321",
+                                        "remark": "图片资源Id",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "picture"
+                                    },
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "testUpdate"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "testUpdate",
+                                        "remark": "应用简介",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "description"
+                                    },
+                                    {
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "",
+                                        "data": [
+                                            {
+                                                "value": {
+                                                    "data": [
+                                                        {
+                                                            "remark": "",
+                                                            "value": "ios.update"
+                                                        }
+                                                    ],
+                                                    "status": "",
+                                                    "type": 0
+                                                },
+                                                "show": 0,
+                                                "drag": 1,
+                                                "mock": "ios.update",
+                                                "remark": "ios安装包",
+                                                "type": 0,
+                                                "must": 1,
+                                                "name": "ios"
+                                            },
+                                            {
+                                                "value": {
+                                                    "data": [
+                                                        {
+                                                            "remark": "",
+                                                            "value": "android.update"
+                                                        }
+                                                    ],
+                                                    "status": "",
+                                                    "type": 0
+                                                },
+                                                "show": 0,
+                                                "drag": 1,
+                                                "mock": "android.update",
+                                                "remark": "android安装包",
+                                                "type": 0,
+                                                "must": 1,
+                                                "name": "android"
+                                            }
+                                        ],
+                                        "remark": "安装包",
+                                        "type": 4,
+                                        "must": 1,
+                                        "name": "packageName"
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "Body结构的json字符串",
+                                    "must": 1,
+                                    "name": "jsonString"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "a9801ce1-ae91-4eb4-bba1-9fc195c9eb20",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "fc440410-399f-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "更新应用信息",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/AppUpdateService",
+                    "name": "AppUpdateService"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "结果success成功,failure失败",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 5,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [
+                                        {
+                                            "data": [
+                                                {
+                                                    "mock": "5",
+                                                    "must": 1,
+                                                    "remark": "ios下载次数",
+                                                    "type": 1,
+                                                    "name": "ios"
+                                                },
+                                                {
+                                                    "mock": "6",
+                                                    "must": 1,
+                                                    "remark": "android下载次数",
+                                                    "type": 1,
+                                                    "name": "android"
+                                                },
+                                                {
+                                                    "mock": "11",
+                                                    "must": 1,
+                                                    "remark": "总下载次数",
+                                                    "type": 1,
+                                                    "name": "total"
+                                                }
+                                            ],
+                                            "mock": "",
+                                            "must": 1,
+                                            "remark": "",
+                                            "type": 4,
+                                            "name": null
+                                        }
+                                    ],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "返回内容（单个）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 0,
+                                "rawJSON": [
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "277e9755-2fe8-48f0-91c8-823a89b9fd98"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "277e9755-2fe8-48f0-91c8-823a89b9fd98",
+                                        "remark": "应用id",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "appId"
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "Body结构的json字符串",
+                                    "must": 0,
+                                    "name": "jsonString"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "e7e6c975-9494-4e75-afff-99bdee1e6d63",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "c2808690-39a9-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "应用下载次数",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/DownloadCoutService",
+                    "name": "DownloadCoutService"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "执行结果",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 5,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "结果内容（空）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 1,
+                                "rawJSON": [
+                                    {
+                                        "data": [
+                                            {
+                                                "drag": 1,
+                                                "mock": "",
+                                                "show": 1,
+                                                "remark": "产品线id(有id是更细，没有是新建)",
+                                                "type": 0,
+                                                "must": 1,
+                                                "name": "id"
+                                            },
+                                            {
+                                                "drag": 1,
+                                                "mock": "",
+                                                "show": 1,
+                                                "remark": "产品线名称",
+                                                "type": 0,
+                                                "must": 1,
+                                                "name": "name"
+                                            }
+                                        ],
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 1,
+                                        "remark": "",
+                                        "type": 4,
+                                        "must": 1,
+                                        "name": null
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "body结构的json字符串",
+                                    "must": 1,
+                                    "name": "jsonString"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "f7f7f58a-37df-4b5d-b1ab-acb87db50900",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "15e02420-46d5-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "添加更新产品线",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/ProductAddAndUpdateService",
+                    "name": "ProductAddAndUpdateService"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "执行结果",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 0,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [
+                                        {
+                                            "data": [
+                                                {
+                                                    "mock": "uuid",
+                                                    "must": 1,
+                                                    "remark": "产品线id",
+                                                    "type": 0,
+                                                    "name": "id"
+                                                }
+                                            ],
+                                            "mock": "",
+                                            "must": 1,
+                                            "remark": "",
+                                            "type": 4,
+                                            "name": null
+                                        }
+                                    ],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "结果内容（单个）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 0,
+                                "rawJSON": [
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "测试"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "测试",
+                                        "remark": "产品线名称",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "name"
+                                    },
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "true"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "true",
+                                        "remark": "是否显示（默认为true）",
+                                        "type": 2,
+                                        "must": 0,
+                                        "name": "show"
+                                    },
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "10"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "10",
+                                        "remark": "排序（默认排在列表最后）",
+                                        "type": 1,
+                                        "must": 0,
+                                        "name": "sort"
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "body格式的json字符串",
+                                    "must": 0,
+                                    "name": "jsonString"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "54c822c4-abe4-4863-b711-b546276857cf",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "117513c0-46d3-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "添加产品",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/ProductAddService",
+                    "name": "ProductAddService"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "版本信息",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "结果：success成功，failure失败",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 0,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [
+                                        {
+                                            "data": [
+                                                {
+                                                    "mock": "",
+                                                    "must": 1,
+                                                    "remark": "id",
+                                                    "type": 0,
+                                                    "name": "id"
+                                                },
+                                                {
+                                                    "mock": "",
+                                                    "must": 1,
+                                                    "remark": "产品线名称",
+                                                    "type": 0,
+                                                    "name": "name"
+                                                }
+                                            ],
+                                            "mock": "",
+                                            "must": 1,
+                                            "remark": "",
+                                            "type": 4,
+                                            "name": null
+                                        }
+                                    ],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "结果内容（多个）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 0,
+                                "rawJSON": [
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 0,
+                                        "remark": "",
+                                        "type": 0,
+                                        "must": 0,
+                                        "name": ""
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "值为json字符串，Body结构",
+                                    "must": 0,
+                                    "name": "jsonString"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "91aa6f5f-3f27-45ce-85ba-2b3f32797ba1",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "e1799c50-3993-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "产品列表",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/ProductListService",
+                    "name": "ProductListService"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "执行结果",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 0,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "结果内容（空）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 0,
+                                "rawJSON": [
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 0,
+                                        "remark": "产品线id",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "id"
+                                    },
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 1,
+                                        "remark": "是否显示",
+                                        "type": 2,
+                                        "must": 1,
+                                        "name": "show"
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "body结构的json字符串",
+                                    "must": 1,
+                                    "name": "jsonString"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "7f779730-5faf-4b2a-b8f9-293777af4f2b",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "9ec0f3c0-46d3-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "显示/隐藏产品线",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/ProductShowOrHideService",
+                    "name": "ProductShowOrHideService"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "结果success成功failure失败",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 5,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [
+                                        {
+                                            "data": [
+                                                {
+                                                    "mock": "b158c3e0-6270-4f8f-a913-1c748bd66994",
+                                                    "must": 1,
+                                                    "remark": "版本id",
+                                                    "type": 0,
+                                                    "name": "id"
+                                                }
+                                            ],
+                                            "mock": "",
+                                            "must": 1,
+                                            "remark": "",
+                                            "type": 4,
+                                            "name": null
+                                        }
+                                    ],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "返回内容（单个）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 0,
+                                "rawJSON": [
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "277e9755-2fe8-48f0-91c8-823a89b9fd98"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "277e9755-2fe8-48f0-91c8-823a89b9fd98",
+                                        "remark": "应用Key",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "appId"
+                                    },
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "android"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "android",
+                                        "remark": "应用版本类型id",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "appTypeId"
+                                    },
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "1.0.0"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "1.0.0",
+                                        "remark": "发布版本号",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "number"
+                                    },
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "1"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "1",
+                                        "remark": "内部版本号",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "build"
+                                    },
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "test"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "test",
+                                        "remark": "版本备注",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "remark"
+                                    },
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "ff28ec2b-61a1-49be-80d9-fd7913dd6289"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "ff28ec2b-61a1-49be-80d9-fd7913dd6289",
+                                        "remark": "安装包资源id",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "resourceId"
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "Body结构的json字符串",
+                                    "must": 1,
+                                    "name": "jsonString"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "eff9dc86-446c-48e0-978d-af6412f738ad",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "2eb97ae0-39a7-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "添加版本",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/VersionAddService",
+                    "name": "VersionAddService"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "结果success成功failure失败",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 5,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [
+                                        {
+                                            "data": [
+                                                {
+                                                    "mock": "277e9755-2fe8-48f0-91c8-823a89b9fd98",
+                                                    "must": 1,
+                                                    "remark": "应用id",
+                                                    "type": 0,
+                                                    "name": "id"
+                                                },
+                                                {
+                                                    "mock": "testUpdateName",
+                                                    "must": 1,
+                                                    "remark": "应用名称",
+                                                    "type": 0,
+                                                    "name": "name"
+                                                },
+                                                {
+                                                    "mock": "987654321",
+                                                    "must": 1,
+                                                    "remark": "图片资源id",
+                                                    "type": 0,
+                                                    "name": "picture"
+                                                },
+                                                {
+                                                    "mock": "",
+                                                    "must": 1,
+                                                    "remark": "应用下载地址",
+                                                    "type": 0,
+                                                    "name": "downloadUrl"
+                                                },
+                                                {
+                                                    "data": [
+                                                        {
+                                                            "data": [
+                                                                {
+                                                                    "mock": "ios",
+                                                                    "must": 1,
+                                                                    "remark": "版本应用类型",
+                                                                    "type": 0,
+                                                                    "name": "appType"
+                                                                },
+                                                                {
+                                                                    "mock": "true",
+                                                                    "must": 1,
+                                                                    "remark": "最新版本是否存在",
+                                                                    "type": 2,
+                                                                    "name": "exist"
+                                                                },
+                                                                {
+                                                                    "mock": "ff28ec2b-61a1-49be-80d9-fd7913dd6289",
+                                                                    "must": 1,
+                                                                    "remark": "版本id",
+                                                                    "type": 0,
+                                                                    "name": "id"
+                                                                },
+                                                                {
+                                                                    "mock": "1.0.0",
+                                                                    "must": 1,
+                                                                    "remark": "版本号",
+                                                                    "type": 0,
+                                                                    "name": "number"
+                                                                },
+                                                                {
+                                                                    "mock": "",
+                                                                    "must": 1,
+                                                                    "remark": "安装包资源id",
+                                                                    "type": 0,
+                                                                    "name": "resource"
+                                                                }
+                                                            ],
+                                                            "mock": "",
+                                                            "must": 1,
+                                                            "remark": "",
+                                                            "type": 4,
+                                                            "name": null
+                                                        },
+                                                        {
+                                                            "data": [
+                                                                {
+                                                                    "mock": "android",
+                                                                    "must": 1,
+                                                                    "remark": "版本应用类型",
+                                                                    "type": 0,
+                                                                    "name": "appType"
+                                                                },
+                                                                {
+                                                                    "mock": "true",
+                                                                    "must": 1,
+                                                                    "remark": "最新版本是否存在",
+                                                                    "type": 2,
+                                                                    "name": "exist"
+                                                                },
+                                                                {
+                                                                    "mock": "ff28ec2b-61a1-49be-80d9-fd7913dd6289",
+                                                                    "must": 1,
+                                                                    "remark": "版本id",
+                                                                    "type": 0,
+                                                                    "name": "id"
+                                                                },
+                                                                {
+                                                                    "mock": "",
+                                                                    "must": 1,
+                                                                    "remark": "安装包资源id",
+                                                                    "type": 0,
+                                                                    "name": "resource"
+                                                                },
+                                                                {
+                                                                    "mock": "1.0.0",
+                                                                    "must": 1,
+                                                                    "remark": "版本号",
+                                                                    "type": 0,
+                                                                    "name": "number"
+                                                                }
+                                                            ],
+                                                            "mock": "",
+                                                            "must": 1,
+                                                            "remark": "",
+                                                            "type": 4,
+                                                            "name": null
+                                                        }
+                                                    ],
+                                                    "mock": "",
+                                                    "must": 1,
+                                                    "remark": "版本信息（多个）",
+                                                    "type": 3,
+                                                    "name": "versions"
+                                                }
+                                            ],
+                                            "mock": "",
+                                            "must": 1,
+                                            "remark": "",
+                                            "type": 4,
+                                            "name": null
+                                        }
+                                    ],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "返回内容（单个）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 0,
+                                "rawJSON": [
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "277e9755-2fe8-48f0-91c8-823a89b9fd98"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "277e9755-2fe8-48f0-91c8-823a89b9fd98",
+                                        "remark": "应用Key",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "appId"
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "Body结构的json字符串",
+                                    "must": 1,
+                                    "name": "jsonString"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "1b852c34-5735-41ea-95ea-a0b9cb71cabb",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "b7ce5930-39ad-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "应用当前可下载版本",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/VersionCurrentService",
+                    "name": "VersionCurrentService"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "结果success成功failure失败",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 0,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "返回结果内容（空）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 0,
+                                "rawJSON": [
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "b158c3e0-6270-4f8f-a913-1c748bd66994"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "b158c3e0-6270-4f8f-a913-1c748bd66994",
+                                        "remark": "版本id",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "id"
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "Body结构的json字符串",
+                                    "must": 1,
+                                    "name": "jsonString"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "a6582884-73b7-446c-81c5-6fca778a0ee4",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "c8911420-39ac-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "应用下载次数递增",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/VersionDownloadTimesAddService",
+                    "name": "VersionDownloadTimesAddService"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "结果",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 5,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [
+                                        {
+                                            "data": [
+                                                {
+                                                    "mock": "www.sina.com",
+                                                    "must": 1,
+                                                    "remark": "下载地址",
+                                                    "type": 0,
+                                                    "name": "downloadUrl"
+                                                },
+                                                {
+                                                    "mock": "1",
+                                                    "must": 1,
+                                                    "remark": "内部版本号",
+                                                    "type": 0,
+                                                    "name": "build"
+                                                }
+                                            ],
+                                            "mock": "",
+                                            "must": 1,
+                                            "remark": "",
+                                            "type": 4,
+                                            "name": null
+                                        }
+                                    ],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "内容（单个）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 0,
+                                "rawJSON": [
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "277e9755-2fe8-48f0-91c8-823a89b9fd98"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "277e9755-2fe8-48f0-91c8-823a89b9fd98",
+                                        "remark": "应用key",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "appId"
+                                    },
+                                    {
+                                        "value": {
+                                            "data": [
+                                                {
+                                                    "remark": "",
+                                                    "value": "ios"
+                                                }
+                                            ],
+                                            "status": "",
+                                            "type": 0
+                                        },
+                                        "show": 0,
+                                        "drag": 1,
+                                        "mock": "ios",
+                                        "remark": "应用类型 ios android",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "appTypeId"
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "body结构的json字符串",
+                                    "must": 1,
+                                    "name": "jsongString"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "91c904d4-3464-4540-8617-1c817824bec5",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "cc45e040-3fb6-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "按应用和应用类型查询最近发布版本",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/VersionLastService",
+                    "name": "VersionLastService"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "结果success成功failure失败",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 5,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [
+                                        {
+                                            "data": [
+                                                {
+                                                    "mock": "1bec11ed-0a4b-4432-a5d5-0f740263ed42",
+                                                    "must": 1,
+                                                    "remark": "版本id",
+                                                    "type": 0,
+                                                    "name": "id"
+                                                },
+                                                {
+                                                    "mock": "277e9755-2fe8-48f0-91c8-823a89b9fd98",
+                                                    "must": 1,
+                                                    "remark": "应用id",
+                                                    "type": 0,
+                                                    "name": "appId"
+                                                },
+                                                {
+                                                    "mock": "ios",
+                                                    "must": 1,
+                                                    "remark": "应用版本类型id",
+                                                    "type": 0,
+                                                    "name": "appTypeId"
+                                                },
+                                                {
+                                                    "mock": "1.0.0",
+                                                    "must": 1,
+                                                    "remark": "发布版本号",
+                                                    "type": 0,
+                                                    "name": "number"
+                                                },
+                                                {
+                                                    "mock": "1",
+                                                    "must": 1,
+                                                    "remark": "内部版本号",
+                                                    "type": 0,
+                                                    "name": "build"
+                                                },
+                                                {
+                                                    "mock": "1131",
+                                                    "must": 1,
+                                                    "remark": "大小（单位：字节）",
+                                                    "type": 1,
+                                                    "name": "size"
+                                                },
+                                                {
+                                                    "mock": "5",
+                                                    "must": 1,
+                                                    "remark": "下载次数",
+                                                    "type": 1,
+                                                    "name": "downloadTimes"
+                                                },
+                                                {
+                                                    "mock": "test",
+                                                    "must": 1,
+                                                    "remark": "版本信息",
+                                                    "type": 0,
+                                                    "name": "remark"
+                                                },
+                                                {
+                                                    "mock": "ff28ec2b-61a1-49be-80d9-fd7913dd6289",
+                                                    "must": 1,
+                                                    "remark": "安装包资源id",
+                                                    "type": 0,
+                                                    "name": "resource"
+                                                },
+                                                {
+                                                    "mock": "true",
+                                                    "must": 1,
+                                                    "remark": "是否有效版本",
+                                                    "type": 2,
+                                                    "name": "valid"
+                                                },
+                                                {
+                                                    "mock": "2019-02-26 17:18:00",
+                                                    "must": 1,
+                                                    "remark": "创建时间",
+                                                    "type": 0,
+                                                    "name": "createTime"
+                                                },
+                                                {
+                                                    "mock": "2019-02-26 17:18:00",
+                                                    "must": 1,
+                                                    "remark": "更新时间",
+                                                    "type": 0,
+                                                    "name": "updateTime"
+                                                }
+                                            ],
+                                            "mock": "",
+                                            "must": 1,
+                                            "remark": "",
+                                            "type": 4,
+                                            "name": null
+                                        }
+                                    ],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "返回内容（多个）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 0,
+                                "rawJSON": [
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 0,
+                                        "remark": "应用id",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "appId"
+                                    },
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 1,
+                                        "remark": "版本应用类型id",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "appTypeId"
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "Body结构的json字符串",
+                                    "must": 1,
+                                    "name": "jsonString"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "fc1301fd-bc49-44eb-a822-7a40ff4a8369",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "994f8910-39ae-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "应用版本列表",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/VersionListService",
+                    "name": "VersionListService"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "结果success成功failure失败",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 5,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "返回内容（空）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 0,
+                                "rawJSON": [
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 0,
+                                        "remark": "版本id",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "id"
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "Body结构的json字符串",
+                                    "must": 1,
+                                    "name": "jsonString"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "d9b92164-2cec-4c61-b2cd-feba92ca1191",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "2d55f9a0-39af-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "删除版本",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/VersionRemoveService",
+                    "name": "VersionRemoveService"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "结果success成功failure失败",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 0,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "返回内容（空）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 0,
+                                "rawJSON": [
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 0,
+                                        "remark": "版本id",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "id"
+                                    },
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 1,
+                                        "remark": "发布版本号",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "number"
+                                    },
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 1,
+                                        "remark": "内部版本号",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "build"
+                                    },
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 1,
+                                        "remark": "版本信息",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "remark"
+                                    },
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 1,
+                                        "remark": "安装包资源id",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "resourceId"
+                                    },
+                                    {
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 1,
+                                        "remark": "安装包大小",
+                                        "type": 0,
+                                        "must": 1,
+                                        "name": "size"
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "Body结构的json字符串",
+                                    "must": 1,
+                                    "name": "json"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "d2be0e9a-a149-447e-bbf4-87493b996655",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "64deef70-39b0-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "版本更新接口",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/VersionUpdateService",
+                    "name": "VersionUpdateService"
+                }
+            ]
+        },
+        {
+            "name": "通用",
+            "type": 0,
+            "id": "b2885eb0-3996-11e9-a5f6-7307f8d107bf",
+            "data": [
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "文件字节流",
+                                "type": 1
+                            },
+                            "outParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "文件资源id",
+                                    "must": 1,
+                                    "name": "resource"
+                                }
+                            ],
+                            "header": [],
+                            "remark": "",
+                            "id": "f7c2bb26-7827-4fd6-ab7a-5ea2b5254223",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "5eb38c10-399b-11e9-a5f6-7307f8d107bf",
+                    "method": "GET",
+                    "remark": "下载",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/download",
+                    "name": "download"
+                },
+                {
+                    "param": [
+                        {
+                            "restParam": [],
+                            "outInfo": {
+                                "jsonType": 0,
+                                "rawMock": "",
+                                "rawRemark": "",
+                                "type": 0
+                            },
+                            "outParam": [
+                                {
+                                    "mock": "1.0",
+                                    "must": 1,
+                                    "remark": "接口版本",
+                                    "type": 0,
+                                    "name": "version"
+                                },
+                                {
+                                    "mock": "success",
+                                    "must": 1,
+                                    "remark": "结果：success成功，failure失败",
+                                    "type": 0,
+                                    "name": "result"
+                                },
+                                {
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "失败原因",
+                                    "type": 0,
+                                    "name": "reason"
+                                },
+                                {
+                                    "data": [
+                                        {
+                                            "data": [
+                                                {
+                                                    "mock": "",
+                                                    "must": 1,
+                                                    "remark": "文件id",
+                                                    "type": 0,
+                                                    "name": "id"
+                                                },
+                                                {
+                                                    "mock": "",
+                                                    "must": 1,
+                                                    "remark": "文件显示名称",
+                                                    "type": 0,
+                                                    "name": "fileName"
+                                                },
+                                                {
+                                                    "mock": "",
+                                                    "must": 1,
+                                                    "remark": "文件后缀",
+                                                    "type": 0,
+                                                    "name": "fileSuffix"
+                                                },
+                                                {
+                                                    "mock": "",
+                                                    "must": 1,
+                                                    "remark": "以“/”开头的子目录",
+                                                    "type": 0,
+                                                    "name": "subdirectory"
+                                                },
+                                                {
+                                                    "mock": "",
+                                                    "must": 1,
+                                                    "remark": "文件主目录",
+                                                    "type": 0,
+                                                    "name": "baseDictionary"
+                                                }
+                                            ],
+                                            "mock": "",
+                                            "must": 1,
+                                            "remark": "",
+                                            "type": 4,
+                                            "name": null
+                                        }
+                                    ],
+                                    "mock": "",
+                                    "must": 1,
+                                    "remark": "返回结果内容（多个）",
+                                    "type": 3,
+                                    "name": "content"
+                                }
+                            ],
+                            "bodyInfo": {
+                                "rawJSONType": 1,
+                                "rawJSON": [
+                                    {
+                                        "data": [
+                                            {
+                                                "drag": 1,
+                                                "mock": "",
+                                                "show": 0,
+                                                "remark": "文件显示名称",
+                                                "type": 0,
+                                                "must": 1,
+                                                "name": "fileName"
+                                            },
+                                            {
+                                                "drag": 1,
+                                                "mock": "",
+                                                "show": 0,
+                                                "remark": "文件后缀",
+                                                "type": 0,
+                                                "must": 1,
+                                                "name": "fileSuffix"
+                                            },
+                                            {
+                                                "drag": 1,
+                                                "mock": "",
+                                                "show": 0,
+                                                "remark": "以“/”开头的子目录",
+                                                "type": 0,
+                                                "must": 1,
+                                                "name": "subdirectory"
+                                            }
+                                        ],
+                                        "drag": 1,
+                                        "mock": "",
+                                        "show": 1,
+                                        "remark": "",
+                                        "type": 4,
+                                        "must": 1,
+                                        "name": null
+                                    }
+                                ],
+                                "rawText": "",
+                                "rawFileRemark": "",
+                                "rawTextRemark": "",
+                                "rawType": 2,
+                                "type": 1
+                            },
+                            "bodyParam": [],
+                            "queryParam": [
+                                {
+                                    "remark": "值为Body结构的json字符串",
+                                    "must": 0,
+                                    "name": "jsonString"
+                                },
+                                {
+                                    "remark": "文件数组",
+                                    "must": 0,
+                                    "type": 0,
+                                    "name": "file"
+                                }
+                            ],
+                            "header": [
+                                {
+                                    "remark": "",
+                                    "value": "application/json",
+                                    "name": "Content-Type"
+                                }
+                            ],
+                            "remark": "",
+                            "id": "f1deed20-5fd2-4df1-812d-302f30b5549f",
+                            "name": "参数",
+                            "after": {
+                                "code": "",
+                                "mode": 0
+                            },
+                            "before": {
+                                "code": "",
+                                "mode": 0
+                            }
+                        }
+                    ],
+                    "finish": 0,
+                    "sort": 0,
+                    "id": "8eefb5b0-3997-11e9-a5f6-7307f8d107bf",
+                    "method": "POST",
+                    "remark": "上传文件",
+                    "url": "/saas-version-app/Spring/MVC/entrance/unifier/upload",
+                    "name": "upload"
+                }
+            ]
+        }
+    ]
+}
